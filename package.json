@@ -10,6 +10,10 @@
   "license": "MIT",
   "funding": "https://github.com/sponsors/antfu",
   "homepage": "https://github.com/antfu/ext-name#readme",
+  "stackblitz": {
+    "startCommand": "",
+    "installDependencies": false
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/antfu/ext-name"
@@ -20,20 +24,14 @@
   "sponsor": {
     "url": "https://github.com/sponsors/antfu"
   },
-  "categories": [
-    "Other"
-  ],
+  "categories": ["Other"],
   "main": "./dist/index.js",
   "icon": "res/icon.png",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "engines": {
     "vscode": "^1.78.1"
   },
-  "activationEvents": [
-    "onStartupFinished"
-  ],
+  "activationEvents": ["onStartupFinished"],
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
     "dev": "nr build --watch",
